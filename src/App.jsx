@@ -39,6 +39,7 @@ export const App = () => {
           {goods.map(name => {
             return (
               <tr
+                key={name}
                 className={
                   selectedGood === name && `has-background-success-light`
                 }
